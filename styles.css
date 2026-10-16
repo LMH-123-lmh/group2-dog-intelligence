@@ -1,0 +1,442 @@
+/* A Dog's Intelligence Style Sheet */
+:root{
+--navy:#17324d;
+--teal:#2e8c87;
+--coral:#ef765f;
+--cream:#fffaf1;
+--ink:#284052;
+--yellow:#f7c95c;
+}
+*{
+box-sizing:border-box;
+}
+body{
+margin:0;
+color:var(--ink);
+font:16px/2.0 Arial,sans-serif;
+background:var(--cream);
+}
+a{
+color:inherit;
+text-decoration:none;
+}
+a:visited{
+color:var(--teal);
+}
+a:hover{
+color:var(--coral);
+text-decoration:underline;
+}
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible{
+outline:3px solid var(--navy);
+outline-offset:3px;
+}
+.button:hover,
+.button:visited,
+.nav-cta:hover,
+.nav-cta:visited{
+color:#fff;
+}
+.container{
+width:min(1120px,92%);
+margin:auto;
+}
+.skip-link{
+position:absolute;
+left:-999px;
+}
+.skip-link:focus{
+left:1rem;
+top:1rem;
+z-index:4;
+padding:.5rem;
+background:#fff;
+}
+.site-header{
+position:sticky;
+top:0;
+z-index:3;
+border-bottom:1px solid #eee6d9;
+background:#fffaf1;
+}
+.nav-wrap{
+display:flex;
+align-items:center;
+justify-content:space-between;
+min-height:78px;
+}
+.logo{
+display:flex;
+gap:9px;
+align-items:center;
+color:var(--navy);
+font-weight:bold;
+line-height:1.05;
+}
+.logo em{
+color:var(--coral);
+font-size:22px;
+}
+.logo-paw{
+font-size:32px;
+}
+.site-header nav ul{
+display:flex;
+gap:28px;
+align-items:center;
+margin:0;
+padding:0;
+list-style:none;
+font-weight:bold;
+}
+.nav-cta,
+.button{
+display:inline-block;
+padding:12px 20px;
+border-radius:999px;
+background:var(--coral);
+color:#fff;
+font-weight:bold;
+}
+.menu-btn{
+display:none;
+padding:8px;
+border:1px solid var(--navy);
+border-radius:6px;
+background:none;
+}
+.hero{
+overflow:hidden;
+background:linear-gradient(120deg,#fffaf1 55%,#e2f1e9 55%);
+}
+.hero-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+min-height:600px;
+align-items:center;
+}
+.eyebrow{
+margin:0 0 12px;
+color:var(--teal);
+font-size:12px;
+font-weight:bold;
+letter-spacing:2px;
+}
+.hero h1{
+margin:0 0 22px;
+color:var(--navy);
+font-size:clamp(48px,7vw,80px);
+line-height:1.03;
+}
+.hero h1 span{
+color:var(--coral);
+}
+.lead{
+max-width:530px;
+font-size:19px;
+}
+.hero-actions{
+display:flex;
+gap:25px;
+align-items:center;
+margin:28px 0;
+}
+.text-link{
+border-bottom:2px solid var(--yellow);
+color:var(--navy);
+font-weight:bold;
+}
+.trust-row{
+display:flex;
+gap:10px;
+align-items:center;
+font-size:13px;
+}
+.trust-row span:first-child,
+.stars{
+color:#e6a62e;
+letter-spacing:2px;
+}
+.hero-art{
+position:relative;
+height:500px;
+}
+.floating-card{
+position:absolute;
+padding:12px 17px;
+border-radius:12px;
+background:#fff;
+box-shadow:0 8px 22px #17324d22;
+font-size:13px;
+}
+.card-one{
+top:130px;
+right:8px;
+color:var(--coral);
+}
+.card-two{
+bottom:85px;
+left:0;
+color:var(--teal);
+}
+.section{
+padding:90px 0;
+}
+.section-heading{
+max-width:650px;
+margin:0 auto 42px;
+text-align:center;
+}
+.section h2{
+margin:0 0 15px;
+color:var(--navy);
+font-size:42px;
+line-height:1.1;
+}
+.service-grid,
+.quote-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+}
+.service-grid article,
+.quote-grid figure{
+margin:0;
+padding:26px;
+border-radius:16px;
+background:#fff;
+box-shadow:0 5px 18px #17324d0b;
+}
+.service-grid h3{
+margin:16px 0 8px;
+color:var(--navy);
+}
+.service-grid p,
+.service-grid a{
+font-size:14px;
+}
+.service-grid a{
+color:var(--teal);
+font-weight:bold;
+}
+.icon{
+display:grid;
+place-items:center;
+width:48px;
+height:48px;
+border-radius:14px;
+font-size:24px;
+}
+.coral{
+background:#ffe0d8;
+}
+.teal{
+background:#d9f0e8;
+}
+.yellow{
+background:#fff0be;
+}
+.navy{
+background:#dce8f2;
+}
+.approach{
+background:#e6f2ed;
+}
+.approach-grid,
+.contact-box{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:70px;
+align-items:center;
+}
+.check-list{
+margin:24px 0;
+padding:0;
+list-style:none;
+}
+.check-list li{
+margin:12px 0;
+}
+.check-list span{
+margin-right:8px;
+color:var(--coral);
+font-weight:bold;
+}
+.secondary{
+background:var(--navy);
+}
+.approach-note{
+padding:42px;
+border-radius:24px;
+background:var(--navy);
+color:#fff;
+box-shadow:12px 14px 0 var(--yellow);
+transform:rotate(2deg);
+}
+.note-top{
+color:#9ce0cb;
+font-size:12px;
+font-weight:bold;
+letter-spacing:2px;
+}
+.approach-note blockquote{
+margin:25px 0;
+font-size:30px;
+font-weight:bold;
+line-height:1.25;
+}
+.stories{
+background:#fff;
+}
+.quote-grid{
+grid-template-columns:repeat(3,1fr);
+}
+.quote-grid figure{
+background:var(--cream);
+}
+.quote-grid blockquote{
+color:var(--navy);
+font-size:19px;
+font-weight:bold;
+}
+.quote-grid figcaption{
+font-size:14px;
+}
+.contact{
+background:var(--coral);
+color:#fff;
+}
+.contact h2{
+color:#fff;
+}
+.contact .eyebrow{
+color:#ffe9a6;
+}
+.contact form{
+display:grid;
+gap:12px;
+padding:25px;
+border-radius:16px;
+background:#fff;
+color:var(--ink);
+}
+.contact label{
+font-size:13px;
+font-weight:bold;
+}
+.contact input,
+.contact select{
+display:block;
+width:100%;
+margin-top:4px;
+padding:12px;
+border:1px solid #ddd;
+border-radius:8px;
+font:inherit;
+}
+.contact .button{
+border:0;
+cursor:pointer;
+}
+.contact #form-message{
+color:var(--teal);
+font-weight:bold;
+}
+footer{
+padding:24px 0;
+background:var(--navy);
+color:#d4e2e9;
+font-size:13px;
+}
+.footer-wrap{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+justify-content:space-between;
+}
+footer a{
+color:#fff;
+}
+.service-grid a:visited,
+.text-link:visited{
+color:var(--navy);
+}
+.service-grid a:hover,
+.text-link:hover{
+color:var(--coral);
+text-decoration:underline;
+}
+footer a:visited{
+color:#9ce0cb;
+}
+footer a:hover{
+color:var(--yellow);
+text-decoration:underline;
+}
+.section,
+main,
+#top{
+scroll-margin-top:90px;
+}
+@media (max-width:780px){
+.site-header nav{
+position:absolute;
+top:78px;
+left:0;
+right:0;
+display:none;
+padding:20px;
+background:#fffaf1;
+}
+.site-header nav.open{
+display:block;
+}
+.site-header nav ul{
+flex-direction:column;
+}
+.menu-btn{
+display:block;
+}
+.hero-grid,
+.approach-grid,
+.contact-box{
+grid-template-columns:1fr;
+}
+.hero{
+background:var(--cream);
+}
+.hero-art{
+height:360px;
+}
+.service-grid{
+grid-template-columns:1fr 1fr;
+}
+.quote-grid{
+grid-template-columns:1fr;
+}
+.footer-wrap{
+flex-direction:column;
+gap:8px;
+}
+}
+/* Real dog image in the hero section */
+.dog-image{
+position:absolute;
+top:100px;
+left:80px;
+width:380px;
+height:330px;
+border-radius:20px;
+object-fit:cover;
+}
+@media (max-width:780px){
+.dog-image{
+top:80px;
+left:10%;
+width:80%;
+height:250px;
+}
+}
